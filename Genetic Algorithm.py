@@ -2,11 +2,11 @@
 import random
 from time import time
 start=time()
-word=input("please enter the word/phrase you would like the program to find") # used to create a 'similarity score'
+word=input("please enter the word/phrase you would like the program to find \n") # used to create a 'similarity score'
 wordlen=len(word) #used to create a 'length score'
 maxscore=wordlen+1
 maincomparison = []#add word and word length to debug ["t","w","a","t",4]
-dataset =127  #127 makes it faster, 1114111 makes it more exhaustative
+dataset =127  #127 makes it faster (ascii limits), 1114111 makes it more exhaustative (full UnicodeImma)
 #first genetic cycle
 for j in range (1,11):
     comparison = []
